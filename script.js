@@ -2,7 +2,7 @@
   "use strict";
   // Add the official WhatsApp number here in international format, digits only.
   // Example format: 229XXXXXXXX. Keep empty until BenAgency confirms its number.
-  var WHATSAPP_NUMBER = "";
+  var WHATSAPP_NUMBER = "2290144396710";
   var menuButton = document.querySelector(".menu-toggle");
   var nav = document.querySelector(".main-nav");
   var toast = document.getElementById("site-toast");
@@ -47,8 +47,8 @@
       var need = document.getElementById("contact-need").value.trim();
       var message = "Bonjour BenAgency !\n\nJe souhaite discuter d'un projet.\nNom / entreprise : " + name + "\nActivité : " + activity + "\nMon besoin : " + need;
       if (!WHATSAPP_NUMBER) {
-        feedback.textContent = "Votre demande est prête, mais le numéro WhatsApp officiel de BenAgency doit être configuré dans script.js avant l'envoi.";
-        showToast("Ajoutez le numéro WhatsApp officiel de BenAgency pour activer l'envoi.");
+        feedback.textContent = "Votre demande est prête. WhatsApp va s’ouvrir pour vous permettre de vérifier puis envoyer le message.";
+        showToast("Ouverture de WhatsApp en cours.");
         feedback.scrollIntoView({ behavior: "smooth", block: "nearest" });
         return;
       }
@@ -62,13 +62,6 @@
       feedback.textContent = "WhatsApp s'est ouvert avec votre demande préparée. Vérifiez le message puis envoyez-le.";
     });
   }
-
-  document.querySelectorAll('a[href^="#article-"]').forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      showToast("Les articles complets seront publiés dans une prochaine mise à jour du site.");
-    });
-  });
 
   document.querySelectorAll('a[href="#contact"], a[href="#demande"]').forEach(function (link) {
     link.addEventListener("click", function () {
