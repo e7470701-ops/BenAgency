@@ -1,22 +1,20 @@
 # BenAgency — site officiel
 
-Site vitrine responsive de BenAgency, agence digitale au Bénin.
+Site vitrine responsive de BenAgency, agence d’accompagnement des entreprises par le conseil, la communication et des solutions concrètes, notamment numériques.
 
 ## Contenu
 
 - Accueil et présentation de l'agence
-- Services : sites professionnels, pages et catalogues, restauration, outils web
+- Services : diagnostic et conseils, image et communication, solutions numériques, outils et organisation
 - Concepts visuels de démonstration
 - Méthode de travail
 - Articles-conseils (les articles complets restent à rédiger)
 - Formulaire de demande préparant un message WhatsApp
 - Design responsive, navigation mobile et accessibilité de base
 
-## Modifier le numéro WhatsApp
+## Vérifier le contact WhatsApp
 
-Ouvrir `script.js` et remplacer la valeur vide de `WHATSAPP_NUMBER` par le numéro officiel de BenAgency au format international, chiffres uniquement, sans le signe `+` ni espaces (par exemple, préfixe Bénin `229`). Ne pas annoncer le site comme prêt pour les demandes WhatsApp tant que le numéro n'a pas été vérifié.
-
-Le formulaire n'envoie aucune donnée vers un serveur. Une fois le numéro configuré, il prépare un message et ouvre WhatsApp afin que le visiteur confirme lui-même l'envoi.
+Le numéro `2290144396710` est actuellement inscrit dans `script.js` et dans les liens WhatsApp des pages de démonstration. Il doit être confirmé comme numéro officiel de BenAgency avant diffusion publique. Le formulaire n'envoie aucune donnée vers un serveur : il prépare un message et ouvre WhatsApp afin que le visiteur le vérifie puis l'envoie lui-même.
 
 ## Déploiement automatique Cloudflare Pages
 
@@ -26,7 +24,7 @@ URL prévue : https://benagency.pages.dev
 
 ## À finaliser avant lancement public
 
-- Configurer et tester le numéro WhatsApp officiel.
+- Confirmer que le numéro WhatsApp configuré est bien le contact officiel de BenAgency et tester l’envoi.
 - Vérifier les images distantes et confirmer les droits d'utilisation des visuels.
 - Garder les exemples clairement présentés comme concepts tant qu'il ne s'agit pas de réalisations réelles autorisées.
 - Rédiger les articles complets et relier les liens de navigation aux pages définitives.

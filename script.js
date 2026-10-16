@@ -1,7 +1,7 @@
 (function () {
   "use strict";
-  // Add the official WhatsApp number here in international format, digits only.
-  // Example format: 229XXXXXXXX. Keep empty until BenAgency confirms its number.
+  // Numéro actuellement configuré dans le site ; à confirmer avant toute campagne publique.
+  // Format international, chiffres uniquement (indicatif Bénin : 229).
   var WHATSAPP_NUMBER = "2290144396710";
   var menuButton = document.querySelector(".menu-toggle");
   var nav = document.querySelector(".main-nav");
